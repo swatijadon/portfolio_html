@@ -1,0 +1,58 @@
+body{
+    background-color: #dfdbdb;
+    margin:0px;
+}s
+
+.reel_div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Wraps to a new row if the screen is small */
+    gap: 20px;
+/* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full height of the viewport */
+    margin: 0;
+    width:100%;
+    /* heigth:auto; */
+    margin-top:50px;
+}
+
+iframe {
+    max-width: 100%;    /* Make the video responsive */
+    max-height: 100%;
+    width:100%;
+    margin-bottom: 50px;
+}
+
+
+.typewriter h1 {
+    overflow: hidden;       /* Hide the overflowing text */
+    white-space: nowrap;  
+    
+    color: rebeccapurple;   /* Prevent the text from wrapping */
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top:10px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    /* animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; */
+    margin-bottom: 20px;
+  }
+
+.title{
+    display: grid;
+    place-items: center;
+    /* height: 100vh; */
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: rebeccapurple;
+    font-weight: bold;
+
+}
+.skill{
+    padding: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+

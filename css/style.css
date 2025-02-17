@@ -1,0 +1,335 @@
+html, body {
+    background-color: #080808;  
+    margin: 0px; 
+    color: green;            
+    font-family: auto; 
+    margin: 0;                 
+    padding: 0;               
+    line-height: 1.6;   
+    
+    text-align: center;
+    margin-top: 23px;
+    color: white;
+    font-style: italic;
+    height: 100%;
+    margin:0;
+    overflow: auto;
+
+
+}
+.profile_img {
+    background-color: white;
+    margin: 30px;
+    padding: 25px;
+    color: #a15d5d;
+    font-style: oblique;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 16px 18px 19px 11px rgba(0, 0, 0, 0.1);
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 0px;
+
+    /* flex-direction: column; */
+
+}
+.left, .right {
+              /* Each div takes 45% of the container */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.right img{
+    width:360px;
+    height:320px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile_img {
+       width:auto;
+       /* height:320px; */
+       flex-direction: column-reverse;  /* Swaps the order on small screens */
+    }
+}
+@media (max-width: 1068px) {
+    .profile_img {
+        flex-direction: column-reverse;  /* Swaps the order on small screens */
+    }
+}
+
+.back-img{
+    width: 100%;
+    display: flex; 
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat;
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    /* position:relative; */
+    justify-content: flex-start;
+    height: -webkit-fill-available;
+}
+
+@media (max-width: 768px) {
+    .back-img {
+       width:auto;
+       /* height:320px; */
+       flex-direction: column-reverse;  /* Swaps the order on small screens */
+    }
+}
+@media (max-width: 1068px) {
+    .back-img {
+        width:auto;
+        flex-direction: column-reverse;  /* Swaps the order on small screens */
+    }
+}
+
+.project-div{
+    background-color:white; 
+    justify-content: space-evenly;  
+    /* width: 80%; */
+    border-radius: 20px;
+    position: absolute;
+    padding: 5px;
+    margin:300px 20px 20px 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: -webkit-fill-available;
+
+    /* flex-direction: row; */
+}
+
+.div_img{
+    width:240px;
+    height:310px;
+    /* position: absolute; */
+    margin: 20px;
+    border-radius:5px;
+    flex-direction: row;
+}
+
+.img-cls{
+    width:207px;
+    height:234px;
+    /* position: absolute; */
+    margin: 20px;
+    border-radius:5px;
+}
+
+.typewriter h1 {
+    overflow: hidden;       /* Hide the overflowing text */
+    border-right: 4px solid #00e676; /* Simulate the blinking cursor */
+    white-space: nowrap;     /* Prevent the text from wrapping */
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top:10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 80%; }
+  }
+  
+  /* Blinking Cursor Effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: transparant; }
+  }
+
+.reel_div {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 90%;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.reel_div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 70%;
+    border: none;
+}
+
+@media (max-width: 1068px) {
+    .reel_div iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*  */
+
+
+@media (max-width: 1143px) {
+    .project-div{
+       /* width:auto; */
+       border:1px solid red !important;
+       margin:300px 18px 10px 193px !important;
+       display: flex;
+        /* flex-direction: column-reverse !important;  */
+    }
+}
+
+@media (max-width: 1143px) {
+    .div_img{
+        width:269px;
+        height:348px;
+        margin: 1px  !important;
+        border-radius:5px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1043px) {
+    .div_img{
+        width:269px;
+        height:348px;
+        margin: 1px;
+        border-radius:5px;
+        flex-direction: row;
+    }
+}
+  
+  
+
+@media (max-width: 1033px) {
+    .project-div{
+       /* width:auto; */
+       border:1px solid red !important;
+       margin:246px 18px 10px 104px !important;
+        display: flex;
+        /* flex-direction: column-reverse !important;  */
+    }
+}
+
+@media (max-width: 1033px) {
+    .div_img{
+        /* width:200px; */
+        /* height:310px; */
+        /* position: absolute; */
+        margin: 20px;
+        border-radius:5px;
+        flex-direction: row;
+    }
+}
+  
+@media (max-width: 993px) {
+    .project-div{
+       /* width:auto; */
+       border:1px solid red !important;
+       margin:246px 18px 10px 21px !important;
+        display: flex;
+        /* flex-direction: column-reverse !important;  */
+    }
+}
+
+@media (max-width: 993px) {
+    .div_img, .img-cls{
+        width:200px;
+        width: 220px;
+        /* height:310px; */
+        /* position: absolute; */
+        margin: 0;
+        border-radius:5px;
+        flex-direction: row;
+    }
+}
+  
+
+
+@media (max-width: 600px) {
+    .back-img {
+        background-size: contain;
+        @media (max-width: 600px) {
+    .project-div {
+        background-size: contain;  /* Change to contain on smaller screens */
+    }
+}  /* Change to contain on smaller screens */
+    }
+}
+
+
+
+.typewriter p{   
+     font-size: 19px;
+    font-family: monospace;
+    padding: 7px;
+}
+
+
+/* SKill */
+
+.skill_div{
+    background-color:white; 
+    
+    /* justify-content: space-between;   */
+    /* width: 80%; */
+    /* border-radius: 20px;
+    position: absolute;
+    padding: 5px;
+    margin:300px 20px 20px 250px; */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    overflow: auto; */
+    /* height: -webkit-fill-available; */
+}
+
+/* .skill{
+    width:200px;
+    height:200px;
+    margin:20px;
+    background-color: red;
+} */
+
+.skills-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+} */
+
+
+.table-cls {
+   
+    margin: 30px;
+    width: 94%;
+     text-align: -webkit-match-parent;;
+
+}
+
+.skill{
+    padding: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
